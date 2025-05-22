@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    image: adrianpuche/websiteniloapp:dev
+    container_name: websitenilo_dev
+    ports:
+      - "8089:80"
+    restart: unless-stopped
